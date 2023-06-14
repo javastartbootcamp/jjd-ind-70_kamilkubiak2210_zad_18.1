@@ -7,18 +7,15 @@
     <groupId>pl.javastart</groupId>
     <artifactId>euler2</artifactId>
     <version>1.0</version>
-    <properties>
-        <maven.compiler.source>19</maven.compiler.source>
-        <maven.compiler.target>19</maven.compiler.target>
-    </properties>
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>5.9.3</version>
+            <version>RELEASE</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -32,6 +29,14 @@
                         <version>1.3.1</version>
                     </dependency>
                 </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>
